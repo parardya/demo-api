@@ -6,6 +6,11 @@ import java.time.LocalDateTime;
 
 @RestController
 public class HelloController {
+    
+    @GetMapping("/")
+    public String home() {
+        return "Welcome to the API!";
+    }
 
     @GetMapping("/hello")
     public String hello() {
